@@ -7,7 +7,16 @@
 
 #include "barn.hpp"
 
-Barn::Barn(){}
+Barn::Barn()
+{
+    Animal *a;
+    a = new Cow("Cow1", 100);
+    animals.push_back(a);
+    a = new Horse("Horse1", 100);
+    animals.push_back(a);
+    a = new Chicken("Chicken1", 100);
+    animals.push_back(a);
+}
 
 void Barn::feedAnimals(string feed)
 {
@@ -16,22 +25,15 @@ void Barn::feedAnimals(string feed)
         if (animals[i]->getFeedingTime() == feed)
         {
             animals.at(i)->eat();
+            animals.at(i)->speak();
             cout<<endl;
         }
     }
 }
 
-void Barn::addHorse(Horse horse)
+void Barn::addAnimal(Animal newAnimal)
 {
-    animals.push_back(&horse);
-}
-
-void Barn::addChicken(Chicken chicken)
-{
-    animals.push_back(&chicken);
-}
-
-void Barn::addCow(Cow cow)
-{
-    animals.push_back(&cow);
+    Animal *a;
+//    a=newAnimal;
+    animals.push_back(a);
 }

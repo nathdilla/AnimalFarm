@@ -9,9 +9,11 @@
 
 Horse::Horse(){}
 
-Horse::Horse(string n,string t,int w, string f)
+Horse::Horse(string n,int w)
 {
     setName(n);
+    setWeight(w);
+    setType("horse");
 }
 
 void Horse::animalWeight()
@@ -24,6 +26,16 @@ void Horse::eat()
     cout << "It is " + getFeedingTime() + ". " + getName() + " weight " + to_string(getWeight())  + " lbs" << endl;
     setWeight(getWeight()+5);
     animalWeight();
+}
+
+void Horse::speak()
+{
+    cout << "neigh" << endl;
+}
+
+int Horse::getTopWeight()
+{
+    return 3000;
 }
 
 void Horse::setFeedingTime(string f)

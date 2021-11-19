@@ -15,11 +15,13 @@ class Chicken : public Animal
 {
 public:
     Chicken();
-    Chicken(string, string, int, string);
+    Chicken(string, int);
     //~Chicken();
     void animalWeight();
     void eat();
+    void speak();
     void setFeedingTime(string);
+    int getTopWeight();
     string getFeedingTime();
 private:
     string feedingTime = "3:00";

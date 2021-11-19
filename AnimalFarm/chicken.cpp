@@ -9,9 +9,11 @@
 
 Chicken::Chicken(){}
 
-Chicken::Chicken(string n,string t,int w, string f)
+Chicken::Chicken(string n,int w)
 {
     setName(n);
+    setWeight(w);
+    setType("chicken");
 }
 
 void Chicken::animalWeight()
@@ -24,6 +26,16 @@ void Chicken::eat()
     cout << "It is " + getFeedingTime() + ". " + getName() + " weight " + to_string(getWeight())  + " lbs" << endl;
     setWeight(getWeight()+1);
     animalWeight();
+}
+
+void Chicken::speak()
+{
+    cout << "cluck" << endl;
+}
+
+int Chicken::getTopWeight()
+{
+    return 100;
 }
 
 void Chicken::setFeedingTime(string f)

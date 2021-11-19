@@ -31,7 +31,8 @@ public:
     
     virtual void eat()=0;
     virtual string getFeedingTime()=0;
-    //virtual void speak()=0;
+    virtual void speak()=0;
+    virtual int getTopWeight()=0;
 private:
     string name;
     int weight;

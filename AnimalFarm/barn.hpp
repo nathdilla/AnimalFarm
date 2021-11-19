@@ -22,9 +22,7 @@ public:
     Barn();
     //~Barn();
     void feedAnimals(string);
-    void addHorse(Horse);
-    void addChicken(Chicken);
-    void addCow(Cow);
+    void addAnimal(Animal);
 private:
     vector <Animal *> animals;
 };

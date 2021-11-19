@@ -11,9 +11,9 @@
 int main(int argc, const char * argv[]) {
     Barn b;
     string feed;
-    b.addCow(Cow("Mr. Moo", "Cow", 415, "5:00"));
-    b.addHorse(Horse("Frank the Horse", "Horse", 505, "2:00"));
-    b.addChicken(Chicken("McNugget", "Chicken", 35, "12:00"));
+//    b.addAnimal(new Cow("Mr. Moo", 415));
+//    b.addHorse(Horse("Frank the Horse", "Horse", 505, "2:00"));
+//    b.addChicken(Chicken("McNugget", "Chicken", 35, "12:00"));
     
     for (int day=0;day<2;day++)
     {
