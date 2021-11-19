@@ -9,7 +9,10 @@
 
 Cow::Cow(){}
 
-Cow::Cow(string n,string t,int w, string f):Animal(n,t,w,f){}
+Cow::Cow(string n,string t,int w, string f)
+{
+    setName(n);
+}
 
 void Cow::animalWeight()
 {
@@ -22,3 +25,14 @@ void Cow::eat()
     setWeight(getWeight()+5);
     animalWeight();
 }
+
+void Cow::setFeedingTime(string f)
+{
+    feedingTime = f;
+}
+
+string Cow::getFeedingTime()
+{
+    return feedingTime;
+}
+

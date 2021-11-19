@@ -19,7 +19,10 @@ public:
     //~Chicken();
     void animalWeight();
     void eat();
+    void setFeedingTime(string);
+    string getFeedingTime();
 private:
+    string feedingTime = "3:00";
 };
 
 #endif /* chicken_hpp */

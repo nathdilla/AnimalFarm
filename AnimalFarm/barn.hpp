@@ -21,16 +21,11 @@ class Barn
 public:
     Barn();
     //~Barn();
-    void feedHorses(string);
-    void feedChickens(string);
-    void feedCows(string);
+    void feedAnimals(string);
     void addHorse(Horse);
     void addChicken(Chicken);
     void addCow(Cow);
 private:
-    vector <Chicken> coop;
-    vector <Cow> pen;
-    vector <Horse> stall;
+    vector <Animal *> animals;
 };
-
 #endif /* barn_hpp */

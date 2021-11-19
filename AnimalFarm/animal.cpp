@@ -9,12 +9,11 @@
 
 Animal::Animal(){};
 
-Animal::Animal(string n,string t,int w,string f)
+Animal::Animal(string n,string t,int w)
 {
     name = n;
     type = t;
     weight = w;
-    feedingTime = f;
 }
 
 string Animal::getName()
@@ -45,9 +44,4 @@ void Animal::setType(string t)
 void Animal::setWeight(int w)
 {
     weight = w;
-}
-
-string Animal::getFeedingTime()
-{
-    return feedingTime;
 }

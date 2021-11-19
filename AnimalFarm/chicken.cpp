@@ -9,7 +9,10 @@
 
 Chicken::Chicken(){}
 
-Chicken::Chicken(string n,string t,int w, string f):Animal(n,t,w,f){}
+Chicken::Chicken(string n,string t,int w, string f)
+{
+    setName(n);
+}
 
 void Chicken::animalWeight()
 {
@@ -22,3 +25,14 @@ void Chicken::eat()
     setWeight(getWeight()+1);
     animalWeight();
 }
+
+void Chicken::setFeedingTime(string f)
+{
+    feedingTime = f;
+}
+
+string Chicken:: getFeedingTime()
+{
+    return feedingTime;
+}
+

@@ -9,37 +9,13 @@
 
 Barn::Barn(){}
 
-void Barn::feedCows(string feed)
+void Barn::feedAnimals(string feed)
 {
-    for (int i=0; i < pen.size();i++)
+    for (int i=0; i < animals.size();i++)
     {
-        if (pen.at(i).getFeedingTime() == feed)
+        if (animals[i]->getFeedingTime() == feed)
         {
-            pen.at(i).eat();
-            cout<<endl;
-        }
-    }
-}
-
-void Barn::feedHorses(string feed)
-{
-    for (int i=0; i < stall.size();i++)
-    {
-        if (stall.at(i).getFeedingTime() == feed)
-        {
-            stall.at(i).eat();
-            cout<<endl;
-        }
-    }
-}
-
-void Barn::feedChickens(string feed)
-{
-    for (int i=0; i < coop.size();i++)
-    {
-        if (coop.at(i).getFeedingTime() == feed)
-        {
-            coop.at(i).eat();
+            animals.at(i)->eat();
             cout<<endl;
         }
     }
@@ -47,15 +23,15 @@ void Barn::feedChickens(string feed)
 
 void Barn::addHorse(Horse horse)
 {
-    stall.push_back(horse);
+    animals.push_back(&horse);
 }
 
 void Barn::addChicken(Chicken chicken)
 {
-    coop.push_back(chicken);
+    animals.push_back(&chicken);
 }
 
 void Barn::addCow(Cow cow)
 {
-    pen.push_back(cow);
+    animals.push_back(&cow);
 }

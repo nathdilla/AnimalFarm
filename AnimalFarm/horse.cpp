@@ -9,7 +9,10 @@
 
 Horse::Horse(){}
 
-Horse::Horse(string n,string t,int w, string f):Animal(n,t,w,f){}
+Horse::Horse(string n,string t,int w, string f)
+{
+    setName(n);
+}
 
 void Horse::animalWeight()
 {
@@ -21,4 +24,14 @@ void Horse::eat()
     cout << "It is " + getFeedingTime() + ". " + getName() + " weight " + to_string(getWeight())  + " lbs" << endl;
     setWeight(getWeight()+5);
     animalWeight();
+}
+
+void Horse::setFeedingTime(string f)
+{
+    feedingTime = f;
+}
+
+string Horse::getFeedingTime()
+{
+    return feedingTime;
 }

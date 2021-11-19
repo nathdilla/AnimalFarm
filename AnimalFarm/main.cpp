@@ -20,9 +20,7 @@ int main(int argc, const char * argv[]) {
         for (int hour=0;hour<=12;hour++)
         {
             feed =to_string(hour)+":00";
-            b.feedCows(feed);
-            b.feedHorses(feed);
-            b.feedChickens(feed);
+            b.feedAnimals(feed);
         }
     }
     return 0;
