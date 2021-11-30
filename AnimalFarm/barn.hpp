@@ -22,8 +22,9 @@ public:
     Barn();
     //~Barn();
     void feedAnimals(string);
-    void addAnimal(Animal);
+    void addAnimal(Animal *);
 private:
     vector <Animal *> animals;
+    void outToPasture(Animal *);
 };
 #endif /* barn_hpp */

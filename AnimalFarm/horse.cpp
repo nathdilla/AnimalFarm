@@ -35,7 +35,7 @@ void Horse::speak()
 
 int Horse::getTopWeight()
 {
-    return 3000;
+    return 2200;
 }
 
 void Horse::setFeedingTime(string f)

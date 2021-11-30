@@ -35,7 +35,7 @@ void Chicken::speak()
 
 int Chicken::getTopWeight()
 {
-    return 100;
+    return 12;
 }
 
 void Chicken::setFeedingTime(string f)

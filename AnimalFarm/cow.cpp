@@ -35,7 +35,7 @@ void Cow::speak()
 
 int Cow::getTopWeight()
 {
-    return 3000;
+    return 1500;
 }
 
 void Cow::setFeedingTime(string f)
